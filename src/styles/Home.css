@@ -1,0 +1,55 @@
+.about{
+    background: linear-gradient(to right, rgb(32, 130, 204), rgb(0, 92, 179));
+    padding: 240px 20px 0 0;
+    color: rgb(231, 231, 28);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: bolder;
+    height: 500px;
+}
+
+.prompt{
+    padding: 0 0 0 0;
+    color: white;
+    font-size: 22px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: normal;
+}
+
+.skills{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(32, 130, 204), rgb(207, 171, 52));
+    font-weight: 700;
+    color: rgb(0, 40, 78);
+    filter: contrast(1.1) brightness(1.2);
+}
+
+.item-skills{
+    font-size: 23px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.iconHover {
+    padding: 15px;
+    font-size: xx-large !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+.iconHover:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}

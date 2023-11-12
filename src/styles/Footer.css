@@ -1,0 +1,29 @@
+.footer{
+    background: linear-gradient(to right, rgb(32, 130, 204), rgb(0, 92, 179));
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0 0 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.socials{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.iconHover {
+    padding: 0 0 5px 5px;
+    font-size: xx-large !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+.iconHover:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}

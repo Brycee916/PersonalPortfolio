@@ -1,0 +1,50 @@
+.navbar{
+    background: linear-gradient(to right, rgb(32, 130, 204), rgb(0, 92, 179));
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.links{
+    margin: 20px;
+    padding: 20px;
+}
+.navbarLinks {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text; /* Standard property */
+    color: transparent; /* Make text transparent so the gradient shows through */
+}
+.navbarLinks:hover {
+    background: linear-gradient(to right, rgb(255, 255, 102), rgb(206, 178, 17)); /* Gradient colors for text */
+    -webkit-background-clip: text;
+    background-clip: text; /* Standard property */
+    color: transparent; /* Make text transparent so the gradient shows through */
+}
+  
+.navbarLinks.active {
+    background: rgb(51, 51, 51); /* Gradient colors for text */
+    -webkit-background-clip: text;
+    background-clip: text; /* Standard property */
+    color: transparent; /* Make text transparent so the gradient shows through */
+}
+
+
+@media screen and (max-width: 900px){
+    .navbar a{
+        width: 70px;
+    }
+}

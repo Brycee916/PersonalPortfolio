@@ -1,0 +1,20 @@
+.experience{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 800;
+    padding: 100px 0 100px 0;
+    margin-top: 100px;
+    background: linear-gradient(to right, rgb(32, 130, 204), rgb(207, 171, 52))
+}
+.vertical-timeline-element--education {
+    color: rgb(0, 40, 78);
+}
+  
+.vertical-timeline-element--education .vertical-timeline-element-icon {
+    background: rgb(0, 40, 78);
+    color: #fff;
+}
+
+#automation-part{
+    text-align: left;
+}
