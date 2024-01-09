@@ -13,18 +13,18 @@ export const ProjectList = [
         name: "Full Stack To-Do List",
         image: Pic1,
         techUsed: "MongoDB, Express, RestAPI, Node",
-        info: "I learned what these technologies do and how they work together"
+        info: "I learned what these technologies do and how they work together."
     },
     {
         name: "Snake Game",
         image: Snake,
         techUsed: "Java",
-        info: "I learned the basics of using java graphic functions"
+        info: "I learned the basics of using java graphic functions."
     },
     {
         name: "File to HTML Generator",
         image: Capture,
         techUsed: "Java",
-        info: "This will turn a generic text file into a simple webpage"
+        info: "This will turn a generic text file into a simple webpage."
     },
 ];
