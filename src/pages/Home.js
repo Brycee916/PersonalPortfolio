@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import "../styles/Home.css";
+import { useNavigate } from 'react-router-dom';
+import Popup from '../components/Popup';
 
 export default function Home() {
+    const [showPopup, setShowPopup] = useState(true); // Initially set to true to show the popup
+
+    useEffect(() => {
+        // Check if the flag is set in localStorage
+        const popupShown = localStorage.getItem('popupShown');
+
+        // If the flag is not set, show the popup and set the flag in localStorage
+        if (!popupShown) {
+            setShowPopup(true);
+            localStorage.setItem('popupShown', 'true');
+        }
+    }, []);
+
+    const navigate = useNavigate();
     const handleLinkedIn = () => {
         window.open('https://www.linkedin.com/in/bryce-c-629b1780/', '_blank');
       };
@@ -12,11 +28,15 @@ export default function Home() {
         window.open('https://github.com/Brycee916', '_blank');
     }
     const handleEmail = () => {
-        window.open('https://www.google.com', '_blank');
+        navigate('/contact');
     }
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
 
   return (
     <div className="home">
+        {showPopup && <Popup onClose={() => setShowPopup(false)} />}
         <div className="about">
             <h2>Hi, my name is Bryce</h2>
             <div className="prompt">
@@ -45,7 +65,7 @@ export default function Home() {
                 <li className="item-skills">
                     <h2>Learning</h2>
                     <span>
-                        React.js, MySQL, MongoDB, Spring
+                        React.js, MySQL, MongoDB, Node.js, Express
                     </span>
                 </li>
                 <li className="item-skills">

@@ -18,7 +18,7 @@ function Footer() {
             <GithubIcon className="iconHover" onClick={handleGitHub} style={{ cursor: 'pointer'}}/>
         </div>
         <div>
-            <p> &copy; 2022 BrycesTechFolio.com</p>
+            <p> &copy; 2023 BrycesTechFolio.com</p>
         </div>
     </div>
   )

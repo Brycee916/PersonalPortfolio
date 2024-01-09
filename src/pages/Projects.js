@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectItem from '../components/ProjectItem';
 import '../styles/Projects.css';
 import { ProjectList } from '../helper/ProjectList';

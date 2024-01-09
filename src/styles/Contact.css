@@ -1,0 +1,43 @@
+.pagelayout{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 800;
+    padding: 100px 0 100px 0;
+    margin-top: 100px;
+    background: linear-gradient(to right, rgb(32, 130, 204), rgb(207, 171, 52));
+}
+
+.contact-form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    width: 500px;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBoxSpecs{
+    font-size: 12px; /* Adjust the font size as needed */
+    width: 300px; /* Adjust the width as needed */
+    padding: 8px;
+    border-radius: 7px;
+}
+.inputBoxSpecs:hover{
+    scale: 1.02;
+}
+
+.messageBoxSpecs{
+    font-size: 12px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 7px;
+}
+.messageBoxSpecs:hover{
+    scale: 1.02;
+}
